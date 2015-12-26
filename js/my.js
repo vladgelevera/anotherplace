@@ -9,9 +9,13 @@ $( document ).ready(function() {
     initBannerVideoSize('.video-container .poster img');
     initBannerVideoSize('.video-container .filter');
     initBannerVideoSize('.video-container video');
+
+    // mobile title top
+    scaleTop();
         
     $(window).on('resize', function() {
         scaleVideoContainer();
+        scaleTop();
         scaleBannerVideoSize('.video-container .poster img');
         scaleBannerVideoSize('.video-container .filter');
         scaleBannerVideoSize('.video-container video');
@@ -27,6 +31,15 @@ function scaleVideoContainer() {
     var height = $(window).height() - 112;
     var unitHeight = parseInt(height) + 'px';
     $('.homepage-hero-module').css('height',unitHeight);
+
+}
+
+function scaleTop() {
+
+    var height = $(window).height() - 112;
+    height = height * 0.2;
+    var unitHeight = parseInt(height) + 'px';
+    $('.title-container-mobile').css('top',unitHeight);
 
 }
 

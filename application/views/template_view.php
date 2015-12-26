@@ -49,7 +49,7 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li <?php if ($content_view == 'main_view.php') echo 'class="active"'; ?>><a href="/">Home</a></li>
+					<li <?php if ($content_view == 'main_view.php' || $content_view == 'mobile_main_view.php') echo 'class="active"'; ?>><a href="/">Home</a></li>
 					<li <?php if ($content_view == 'blog_view.php') echo 'class="active"'; ?>><a href="/blog">Blog</a></li>
 					<li <?php if ($content_view == 'about_view.php') echo 'class="active"'; ?>><a href="/about">About</a></li>
 				</ul>

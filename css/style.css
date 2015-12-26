@@ -1,3 +1,5 @@
+/* ========== DIFFERENT STYLES ========== */
+
 @font-face {
   font-family: myFont;
   src: url(https://fonts.googleapis.com/css?family=Roboto);
@@ -44,16 +46,22 @@ body {
   margin-bottom: -60px;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+
+
+
+
+/* ========== Sticky footer styles ========== */
+
 html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -63,22 +71,31 @@ body {
   background-color: #101010;
   color: #ffffff;
 }
+
 .container p {
   margin: 20px 0;
 }
 
-/* ----- Video Background ----- */
+
+
+
+
+/* ========== VIDEO ON BACKGEOUND ON DESCTOP ========== */
+
 .homepage-hero-module {
   position: relative;
 }
+
 .no-video .video-container video,
 .touch .video-container video {
   display: none;
 }
+
 .no-video .video-container .poster,
 .touch .video-container .poster {
   display: block !important;
 }
+
 .video-container {
   position: relative;
   bottom: 0%;
@@ -89,25 +106,20 @@ body {
   background: #000;
   margin-top: -20px;
 }
-.video-container-mobile {
-  background: url("../../media/images/sun.jpg") no-repeat center center fixed;
-  background-size: 100% auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 .video-container .poster img {
   width: 100%;
   bottom: 0;
   position: absolute;
 }
+
 .video-container .filter {
   z-index: 100;
   position: absolute;
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
 }
+
 .video-container .title-container {
   z-index: 1000;
   position: absolute;
@@ -141,6 +153,7 @@ body {
   width: 45%;
   margin: 0 auto;
 }
+
 .video-container .link {
   position: absolute;
   bottom: 3em;
@@ -150,18 +163,69 @@ body {
   font-size: 2em;
   color: #fff;
 }
+
 .video-container .link a {
   color: #fff;
 }
+
 .video-container video {
   position: absolute;
   z-index: 0;
   bottom: 0;
 }
+
 .video-container video.fillWidth {
   width: 100%;
 }
-/* ----- */
+
+
+
+
+
+/* ========== POSTER ON THE BACKGROUND ON MOBILE HOME PAGE ========== */
+
+.video-container-mobile {
+  background: url("../../media/images/sun.jpg") no-repeat center center fixed;
+  background-size: 100% auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.video-container .title-container-mobile {
+  z-index: 1000;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .video-container .title-container-mobile .video-header {
+    font-size: 50px;
+  }
+  .video-container .title-container-mobile {
+    top: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .video-container .title-container-mobile .video-header {
+    font-size: 80px;
+  }
+}
+
+.video-container .title-container-mobile .video-text {
+  font-size: 20px;
+}
+
+
+
+
+
+/* ========== PANELS ON HOME PAGE ========== */
 
 .transparent {
   background-color: transparent;

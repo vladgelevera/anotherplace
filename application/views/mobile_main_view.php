@@ -1,7 +1,7 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="homepage-hero-module">
 	<div class="video-container video-container-mobile">
-		<div class="title-container">
+		<div class="title-container-mobile">
 			<h1 class="video-header">Anotherplace</h1>
 			<p class="video-text">Quiet and peaceful</p>
 			<div class="container">
