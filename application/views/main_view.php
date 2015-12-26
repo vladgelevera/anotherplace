@@ -6,17 +6,17 @@
 			<p class="video-text">Quiet and peaceful</p>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-4 col-sm-offset-2">
+					<div class="col-xs-6 col-sm-4 col-sm-offset-2">
 						<div class="panel panel-default transparent panel-main">
 							<a href="/blog">
-								<div class="panel-body">My blog</div>
+								<div class="panel-body">Blog</div>
 							</a>
 						</div>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-xs-6 col-sm-4">
 						<div class="panel panel-default transparent panel-main">
 							<a href="/about">
-								<div class="panel-body">About Anotherplace</div>
+								<div class="panel-body">About</div>
 							</a>
 						</div>
 					</div>
