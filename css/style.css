@@ -1,0 +1,180 @@
+@font-face {
+  font-family: myFont;
+  src: url(https://fonts.googleapis.com/css?family=Roboto);
+}
+
+body {
+  font-family: Hind Vadodara;
+}
+
+.jumbotron {
+	background-color: #ffffff;
+}
+
+.jumbotron h1 {
+  font-size: 63px;
+}
+
+.navbar {
+	border-radius: 0px;
+}
+
+.project-title {
+  font-size: 26px;
+}
+
+.project-text {
+  font-size: 18px;
+}
+
+.news-text {
+  font-size: 18px;
+}
+
+.post-content {
+  font-size: 20px;
+}
+
+.about-text {
+  font-size: 20px;
+}
+
+.jumbotron {
+  margin-top: -60px;
+  margin-bottom: -60px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #101010;
+  color: #ffffff;
+}
+.container p {
+  margin: 20px 0;
+}
+
+/* ----- Video Background ----- */
+.homepage-hero-module {
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  margin-top: -20px;
+}
+.video-container-mobile {
+  background: url("../../media/images/sun.jpg") no-repeat center center fixed;
+  background-size: 100% auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+.video-container .title-container {
+  z-index: 1000;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .video-container .title-container .video-header {
+    font-size: 50px;
+  }
+  .video-container .title-container {
+    top: 25%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .video-container .title-container .video-header {
+    font-size: 80px;
+  }
+}
+
+.video-container .title-container .video-text {
+  font-size: 20px;
+}
+
+.video-container .description .inner {
+  font-size: 1em;
+  width: 45%;
+  margin: 0 auto;
+}
+.video-container .link {
+  position: absolute;
+  bottom: 3em;
+  width: 100%;
+  text-align: center;
+  z-index: 1001;
+  font-size: 2em;
+  color: #fff;
+}
+.video-container .link a {
+  color: #fff;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
+}
+/* ----- */
+
+.transparent {
+  background-color: transparent;
+}
+
+.panel-main {
+  font-size: 20px;
+}
+
+.panel-main a {
+  color: inherit;
+}
+
+.panel-main a:hover {
+  color: inherit;
+}
