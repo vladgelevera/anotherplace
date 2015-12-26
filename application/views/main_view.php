@@ -8,12 +8,16 @@
 				<div class="row">
 					<div class="col-sm-4 col-sm-offset-2">
 						<div class="panel panel-default transparent panel-main">
-						<div class="panel-body"><a href="/blog">My blog</a></div>
+							<a href="/blog">
+								<div class="panel-body">My blog</div>
+							</a>
 						</div>
 					</div>
 					<div class="col-sm-4">
 						<div class="panel panel-default transparent panel-main">
-							<div class="panel-body"><a href="/about">About Anotherplace</a></div>
+							<a href="/about">
+								<div class="panel-body">About Anotherplace</div>
+							</a>
 						</div>
 					</div>
 				</div>
