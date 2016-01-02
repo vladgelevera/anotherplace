@@ -52,6 +52,8 @@
 					<li <?php if ($content_view == 'main_view.php' || $content_view == 'mobile_main_view.php') echo 'class="active"'; ?>><a href="/">Home</a></li>
 					<li <?php if ($content_view == 'blog_view.php') echo 'class="active"'; ?>><a href="/blog">Blog</a></li>
 					<li <?php if ($content_view == 'about_view.php') echo 'class="active"'; ?>><a href="/about">About</a></li>
+					<?php if (isset($_COOKIE['admin'])): ?><li><a href="/admin">Control panel</a></li><?php endif; ?>
+					<?php if (isset($_COOKIE['admin'])): ?><li><a href="/admin/logout">Logout</a></li><?php endif; ?>
 				</ul>
 			</div>
 		</div>

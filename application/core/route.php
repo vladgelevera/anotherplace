@@ -13,8 +13,11 @@
 			// контроллер и действие по умолчанию
 			$controller_name = 'Main';
 			$action_name = 'index';
-			
-			$routes = explode('/', $_SERVER['REQUEST_URI']);
+
+			if (empty($_GET) && empty($_POST))
+				$routes = explode('/', $_SERVER['REQUEST_URI']);
+			else
+				$routes = explode('/', $_SERVER['REDIRECT_URL']);
 
 			// получаем имя контроллера
 			if (!empty($routes[1]))
@@ -67,7 +70,7 @@
 				правильно было бы кинуть здесь исключение,
 				но для упрощения сразу сделаем редирект на страницу 404
 				*/
-				Route::ErrorPage404();
+				//Route::ErrorPage404();
 			}
 			
 			// создаем контроллер
@@ -85,7 +88,7 @@
 				else
 				{
 					// здесь также разумнее было бы кинуть исключение
-					Route::ErrorPage404();
+					//Route::ErrorPage404();
 				}
 			}
 			// если поста нету, то вызываем простое действие
@@ -99,17 +102,17 @@
 				else
 				{
 					// здесь также разумнее было бы кинуть исключение
-					Route::ErrorPage404();
+					//Route::ErrorPage404();
 				}
 			}
 		
 		}
 
-		function ErrorPage404()
+		static function ErrorPage404()
 		{
 			$host = 'http://' . $_SERVER['HTTP_HOST'] . '/';
-			header('HTTP/1.1 404 Not Found');
-			header("Status: 404 Not Found");
+			//header('HTTP/1.1 404 Not Found');
+			//header("Status: 404 Not Found");
 			header('Location:' . $host . '404');
 		}
 	    
