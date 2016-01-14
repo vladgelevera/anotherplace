@@ -1,10 +1,4 @@
 <div class="container">
-	<!-- 
-	<div class="jumbotron text-center">
-		<h1><?= $data['theme'] ?></h1>
-		<p><?= $data['date']; ?></p>
-	</div> 
-	-->
 	<div class="row">
 		<div class="col-sm-12 text-center">
 			<h1><?= $data['theme'] ?></h1>

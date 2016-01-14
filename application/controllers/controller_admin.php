@@ -35,23 +35,47 @@
 
 		function action_insert()
 		{
-			$this->model->insert($_POST['number'], $_POST['date'], $_POST['theme'], $_POST['description'], $_POST['content']);
-			$host = 'http://' . $_SERVER['HTTP_HOST'] . '/';
-			header('Location:' . $host . 'admin');
+			if (isset($_COOKIE['admin']))
+			{
+				$this->model->insert($_POST['number'], $_POST['date'], $_POST['theme'], $_POST['description'], $_POST['content']);
+				$host = 'http://' . $_SERVER['HTTP_HOST'] . '/';
+				header('Location:' . $host . 'admin');
+			}
+			else
+			{
+				$host = 'http://' . $_SERVER['HTTP_HOST'] . '/';
+				header('Location:' . $host . '404');
+			}
 		}
 
 		function action_update()
 		{
-			$this->model->update($_POST['id'], $_POST['number'], $_POST['date'], $_POST['theme'], $_POST['description'], $_POST['content']);
-			$host = 'http://' . $_SERVER['HTTP_HOST'] . '/';
-			header('Location:' . $host . 'admin');
+			if (isset($_COOKIE['admin']))
+			{
+				$this->model->update($_POST['id'], $_POST['number'], $_POST['date'], $_POST['theme'], $_POST['description'], $_POST['content']);
+				$host = 'http://' . $_SERVER['HTTP_HOST'] . '/';
+				header('Location:' . $host . 'admin');
+			}
+			else
+			{
+				$host = 'http://' . $_SERVER['HTTP_HOST'] . '/';
+				header('Location:' . $host . '404');
+			}
 		}
 
 		function action_delete($post_number)
 		{
-			$this->model->delete($post_number);
-			$host = 'http://' . $_SERVER['HTTP_HOST'] . '/';
-			header('Location:' . $host . 'admin');
+			if (isset($_COOKIE['admin']))
+			{
+				$this->model->delete($post_number);
+				$host = 'http://' . $_SERVER['HTTP_HOST'] . '/';
+				header('Location:' . $host . 'admin');
+			}
+			else
+			{
+				$host = 'http://' . $_SERVER['HTTP_HOST'] . '/';
+				header('Location:' . $host . '404');
+			}
 		}
 
 		function action_login()
