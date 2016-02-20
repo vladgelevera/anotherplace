@@ -5,8 +5,8 @@
 
 		function __construct()
 		{
-			$this->model = new Model_Main();
-			$this->view = new View();
+			$this->model  = new Model_Main();
+			$this->view   = new View();
 			$this->detect = new Mobile_Detect();
 		}
 
